@@ -1,14 +1,16 @@
 //
-// 3dimage.pov -- -template for 3d images rendered by Povray
+// wurzel.pov -- riemannsche Fläche als Definitionsbereich
+//               für die Wurzelfunktion
 //
-// (c) 2023 Prof Dr Andreas Müller
+// (c) 2026 Prof Dr Andreas Müller
 //
 #include "../../../common/common.inc"
 #include "functions.inc"
 
 #declare flaechenfarbe = rgb<0.6,0.8,0.8>;
-#declare schnittfarbe = rgb<0.6,0.6,2.0>;
+#declare schnittfarbe = rgb<0.6,0.6,1.0>;
 #declare patchfarbe = rgb<0.8,0.2,0.4>;
+#declare wegfarbe = Yellow;
 #declare kurvemax = 1.80 * pi;
 #declare kurveradius = 0.6;
 #declare patchradius = 0.25;
@@ -124,7 +126,6 @@ union {
 }
 #end
 
-#declare wegfarbe = Yellow;
 
 //
 // Kurve in der Fläche, entlang der die analytische Fortsetzung

@@ -3,7 +3,7 @@
 #
 # (c) 2026 Prof Dr Andreas Müller
 #
-all:	nichtanalytisch.pdf wurzel.pdf
+all:	nichtanalytisch.pdf wurzel2.pdf wurzel.pdf
 
 nichtanalytisch.pdf:	nichtanalytisch.tex
 	pdflatex nichtanalytisch.tex
@@ -16,3 +16,6 @@ wurzel.jpg:	wurzel.png Makefile
 
 wurzel.pdf:	wurzel.tex wurzel.jpg
 	pdflatex wurzel.tex
+
+wurzel2.pdf:	wurzel2.tex
+	pdflatex wurzel2.tex
